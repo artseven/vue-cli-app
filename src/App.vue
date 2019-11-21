@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <div>{{ "hello world" | capitalize }}</div>
+    <div>{{ cat }}</div>
   </div>
 </template>
 
@@ -9,9 +10,11 @@ export default {
   name: "app",
   data() {
     return {
-      msg: "Welcome to Your Vue.js App"
+      cat: {
+        sound: "meow"
+      }
     };
-  },
+  }
 };
 </script>
 
